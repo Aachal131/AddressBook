@@ -1,17 +1,14 @@
 package com.addressmanagement;
 
 class Contacts {
-    // Fields
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String city;
-    private String state;
-    private String zip;
-    private String phoneNumber;
-    private String email;
-
-    // Constructor
+    public String firstName;
+    public String lastName;
+    public String address;
+    public String city;
+    public String state;
+    public String zip;
+    public String phoneNumber;
+    public String email;
     public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
                     String phoneNumber, String email) {
         this.firstName = firstName;
@@ -37,8 +34,6 @@ class Contacts {
 public class AddressBook {
     public static void main(String[] args){
         Contacts contact1 = new Contacts("Aachal", "Borole", "Chinchapada west", "Mumbai", "MH", "12345", "555-1234", "aachalkborle131@gmail.com");
-
-        // Displaying contact information
         System.out.println("Contact Information:");
         contact1.displayContact();
     }
